@@ -1,0 +1,46 @@
+group: "CHN"
+conditions:
+  - operand: DEPTID
+    operations:
+      - operator: eq
+        values:
+          - ALL
+  - operand: EMPLTYPE
+    operations:
+      - operator: eq
+        values:
+          - RFS
+  - operand: PROBATION
+    operations:
+      - operator: eq
+        values:
+          - 150
+---
+group: "AUS"
+conditions:
+  - operand: DEPTID
+    operations:
+      - operator: eq
+        values:
+          - "1020"
+  - operand: EMPLTYPE
+    operations:
+      - operator: eq
+        values:
+          - RFS
+  - operand: PROBATION
+    operations:
+      - operator: eq
+        values:
+          - 150
+---
+group: "IND"
+conditions:
+  - operand: PROBATION
+    operations:
+      - operator: gt
+        values:
+          - 25
+      - operator: lt
+        values:
+          - 75
